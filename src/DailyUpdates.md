@@ -8,3 +8,13 @@ State in React Js
 5- Example of State
 6- Multiple States
 7- Interview question
+
+2nd part ---
+Toggle or hide and Show in React 
+
+1- Define State
+2- Update state on button click 
+3- Add condition for toggle 
+4- Hide and show component
+5- A test
+6- Interview Question
