@@ -18,3 +18,11 @@ Toggle or hide and Show in React
 4- Hide and show component
 5- A test
 6- Interview Question
+
+3rd part---
+Multiple Conditional In React
+
+1- Define state and button 
+2- Change state value on button 
+3- Apply Condition with state 
+4- Interview qusition 
