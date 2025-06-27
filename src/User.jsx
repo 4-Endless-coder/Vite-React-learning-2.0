@@ -1,9 +1,13 @@
-function User() {
+const User =({user}) => {
+    
     return (
         <div>
-            <h1>User Component</h1>
+            <hr />
+            <h2>Name: {user.name}</h2>
+            <h2>Name: {user.age}</h2>
+            <h2>Name: {user.email}</h2>
         </div>
-    )
-}
+    );
+};
 
 export default User;
