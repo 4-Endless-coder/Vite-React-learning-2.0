@@ -25,4 +25,14 @@ Multiple Conditional In React
 1- Define state and button 
 2- Change state value on button 
 3- Apply Condition with state 
-4- Interview qusition 
+4- Interview question 
+
+4th part---
+Props in React Js
+
+1- What is Props?
+2- Make Component
+3- Pass data between components .Var, object, array
+4- Recevie and Display Data
+5- Pass data in component with click 
+6- Interview Question 
