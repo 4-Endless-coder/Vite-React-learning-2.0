@@ -39,3 +39,12 @@ Props in React Js
 7- Default props
 8- Pass jsx with Props
 9- Chnage style with props
+
+5th part---
+Get input field Value
+
+1- Make input field
+2- Define State
+3- Get input field value in state
+4- Dispaly Value
+5- Clear input field value
