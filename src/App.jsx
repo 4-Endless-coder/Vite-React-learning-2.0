@@ -1,46 +1,27 @@
-import { useState } from "react";
-import College from "./College";
-import Student from "./Student";
-import User from "./User";
+import React from 'react'
+import User2 from './User2'
+import Wrapper from './Wrapper'
 
 function App() {
-  // let userName=" Ashesh Dash";
-  // let age = 25;
-  // let email= "ashesh@test2.com";
-
-  let userObj= {
-    name:"Ashesh Dash",
-    age:25,
-    email:"ashesh@test.com"
-  }
-  let userObj2= {
-    name:"Peter",
-    age:20,
-    email:"peter@test.com"
-  }
-  let userObj3= {
-    name:"Bruce",
-    age:31,
-    email:"Bruce@test.com"
-  }
-
-  let collegeNames = ['IIT', 'MIT', 'IET', 'NIT', 'DU' ]
-  const [student,setStudent]= useState()
   return (
     <div>
-      <h1>Props in React js</h1>
-      <button onClick={()=>setStudent('bhasker')}>Update Student Name</button>
+      <h1>Props in React</h1>
+      {/* <User2 name="Ashesh Dash"/>
+      <User2 name='sam'/>
+      <User2/> */}
+      <Wrapper color="red">
+        <h1>Hi, everyone</h1>
+      </Wrapper>
+      <Wrapper color="orange">
+        <h1>Hi, Ashesh</h1>
+      </Wrapper>
+      <Wrapper>
+        <h1>Hi, Admin</h1>
+        <h2 style={{color:"blue"}}>Please login</h2>
+      </Wrapper>
 
-      {student && <Student name={student} />}
-
-      <College name={collegeNames[2]}/>
-       {/* <User name={userName} age={age} email={email}/> */}
-        <User user={userObj} /> 
-        <User user={userObj2} /> 
-        <User user={userObj3} /> 
-        
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
