@@ -36,3 +36,6 @@ Props in React Js
 4- Recevie and Display Data
 5- Pass data in component with click 
 6- Interview Question 
+7- Default props
+8- Pass jsx with Props
+9- Chnage style with props
