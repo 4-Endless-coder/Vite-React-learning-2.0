@@ -48,3 +48,13 @@ Get input field Value
 3- Get input field value in state
 4- Dispaly Value
 5- Clear input field value
+
+6th part---
+Controlled Component
+
+1- What is Controlled component
+2- How to identify this is a Controlled component
+3- Error if we don't use Controlled value property
+4- Make From get input filed inputs
+5- Display input field values
+6- Interview question 
