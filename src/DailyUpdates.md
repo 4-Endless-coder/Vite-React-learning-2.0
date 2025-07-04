@@ -78,3 +78,12 @@ Handle Radio and Dropdown
 5- get dropdown value in state
 6- Default selection in dropdown
 7- inteview Question 
+
+9th part--
+Loop in JSX with Map Function
+
+1- What is Array
+2- Make Array
+3- Make Table in JSX
+4- Use map Function for looping
+5- interview question
