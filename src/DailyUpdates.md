@@ -95,4 +95,13 @@ Reuse component in loop
 3- Render component in Loop
 4- Pass data in component inside loop
 5- Add Style
-6- Interview Question
+6- Interview Question 
+
+Nested Looping 
+
+1- Understand array structure for nested looping
+2- make outer loop
+3- make inner loop
+4- Make component for outer loop
+5- Make component for inner loop
+6- Interview question
