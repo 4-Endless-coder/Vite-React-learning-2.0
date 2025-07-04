@@ -87,3 +87,12 @@ Loop in JSX with Map Function
 3- Make Table in JSX
 4- Use map Function for looping
 5- interview question"
+
+Reuse component in loop
+
+1- Make Componenet 
+2- Apply Map for loop in JSX
+3- Render component in Loop
+4- Pass data in component inside loop
+5- Add Style
+6- Interview Question
