@@ -58,3 +58,12 @@ Controlled Component
 4- Make From get input filed inputs
 5- Display input field values
 6- Interview question 
+
+7th part--
+Handle Checkbox
+
+1- Make checkbox
+2- define state for checkbox
+3- Get checkbox valuein State
+4- Remove Checkbox value in State
+5- interview 
