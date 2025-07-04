@@ -67,3 +67,14 @@ Handle Checkbox
 3- Get checkbox valuein State
 4- Remove Checkbox value in State
 5- interview 
+
+8th part---
+Handle Radio and Dropdown
+
+1- Make Radio buttons
+2- Get Radio button value in state
+3- Defulat selection of Radio button
+4- Make Dropdown
+5- get dropdown value in state
+6- Default selection in dropdown
+7- inteview Question 
