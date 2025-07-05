@@ -105,3 +105,14 @@ Nested Looping
 4- Make component for outer loop
 5- Make component for inner loop
 6- Interview question
+
+10th part---
+Hooks in React js/ UseEffect
+
+1- What is use of useEffect
+2- What example we will take in this part
+3- Syntax of useEffect
+4- Use Effect with state
+5- Use Effect with props
+6- Interview Question
+
