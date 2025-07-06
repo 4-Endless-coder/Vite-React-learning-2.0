@@ -1,35 +1,18 @@
-import React,{useState, useEffect} from 'react'
+import React, { useState } from 'react'
+import Counter from './Counter'
 
 function App() {
-
-  const [counter, setCounter] = useState(0);
-  const [data, setData] = useState(0);
-
-    useEffect(()=> {
-    // callOnce();
-     counterFunc();
-  },[counter]);
-  
-
-  function callOnce() {
-    console.log('This function should only be called once');
-    
-  }
-
- 
-  function counterFunc() {
-    console.log("TEST",counter);
-    
-  }
-
+const [count, setCount] = useState(0)
+const [data, setData] = useState(0)
 
   return (
     <div>
-      <h1>Hooks</h1>
-      <button onClick={()=>setCounter(counter+1)}>Counter{counter}</button>
-      <button onClick={()=>setData(data+1)}>Data{data}</button>
+      <Counter count={count} data={data}/>
+      <button onClick={()=>setCount(count +1)}>Counter</button>
+      <button onClick={()=>setData(data +1)}>Data</button>
     </div>
   )
 }
 
 export default App
+ 
