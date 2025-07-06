@@ -123,3 +123,10 @@ Handle Props Side Effect with useEffect in component
 3- Apply useEffect to handle side effects 
 4- How to pass as dependency in useEffect
 5- Interview Questions
+
+Component Life Cycle in React
+
+1- What is life cycle in Raect component 
+2- Phase of life cycle 
+3- How to use useEffect to handle life cycle 
+4- interview que

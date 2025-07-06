@@ -1,18 +1,11 @@
-import React, { useState } from 'react'
-import Counter from './Counter'
+import React from 'react'
 
-function App() {
-const [count, setCount] = useState(0)
-const [data, setData] = useState(0)
-
+const App = () => {
   return (
     <div>
-      <Counter count={count} data={data}/>
-      <button onClick={()=>setCount(count +1)}>Counter</button>
-      <button onClick={()=>setData(data +1)}>Data</button>
+      <h1>Component Life Cycle in React</h1>
     </div>
   )
 }
 
 export default App
- 
