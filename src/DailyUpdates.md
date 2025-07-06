@@ -116,3 +116,10 @@ Hooks in React js/ UseEffect
 5- Use Effect with props
 6- Interview Question
 
+Handle Props Side Effect with useEffect in component
+
+1- Make Component 
+2- Pass component 
+3- Apply useEffect to handle side effects 
+4- How to pass as dependency in useEffect
+5- Interview Questions
