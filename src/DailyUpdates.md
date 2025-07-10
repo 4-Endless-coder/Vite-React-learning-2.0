@@ -130,3 +130,14 @@ Component Life Cycle in React
 2- Phase of life cycle 
 3- How to use useEffect to handle life cycle 
 4- interview que
+
+11 Part---
+Inline Style in React
+
+1- How React inline style is different from regular inline style
+2- Example with style of a User Profile card
+* HTML Code
+* Add inline style
+3- Use Js object for style
+4- Make multiple card for user profile
+5- Interview Question 
