@@ -141,3 +141,10 @@ Inline Style in React
 3- Use Js object for style
 4- Make multiple card for user profile
 5- Interview Question 
+
+Dynamic and Conditional inline Style
+
+1- Make Button for dynamic style
+2- Use State for style object
+3- Update style on button click
+4- Apply style conditional
