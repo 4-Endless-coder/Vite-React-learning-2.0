@@ -148,3 +148,10 @@ Dynamic and Conditional inline Style
 2- Use State for style object
 3- Update style on button click
 4- Apply style conditional
+
+External Style in React js
+
+1- How we write external style
+2- Make CSS File
+3- Write style in CSS file 
+4- Right way to import css file 
