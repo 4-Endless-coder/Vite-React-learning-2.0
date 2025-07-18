@@ -163,3 +163,11 @@ Style with CSS Modules
 3- Write module css
 4- Import css in component
 5- interview question 
+
+Styled Components
+
+1- What is Styled component
+2- install styled component package
+3- import and Apply Styled component
+4- Write style with styled component
+5- interview Question 
