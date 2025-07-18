@@ -155,3 +155,11 @@ External Style in React js
 2- Make CSS File
 3- Write style in CSS file 
 4- Right way to import css file 
+
+Style with CSS Modules
+
+1- Why needs css module 
+2- Make css module file
+3- Write module css
+4- Import css in component
+5- interview question 
