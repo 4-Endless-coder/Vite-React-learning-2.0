@@ -178,3 +178,12 @@ Add Bootstrap in React js
 2- instalation of bootstarp 
 3- import and use bootstrap in react js 
 4- Bootstrap examples button, alerts 
+
+12th Part---
+useRef Hook in React 
+
+1- What is useRef?
+2- Learn how to use useRef
+3- Control input field with useRef
+4- Hide and show input field with useRef/ Not Recommended
+5- Interview Question 
