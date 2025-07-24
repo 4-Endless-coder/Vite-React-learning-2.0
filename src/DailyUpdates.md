@@ -187,3 +187,11 @@ useRef Hook in React
 3- Control input field with useRef
 4- Hide and show input field with useRef/ Not Recommended
 5- Interview Question 
+
+13th Part---
+Uncontrolled Component
+
+1- What is Uncontrolled component?
+2- Make Uncontrolled component with query selector
+3- Make Uncontrolled component with useRef
+4- Interview question
