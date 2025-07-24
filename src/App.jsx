@@ -1,40 +1,35 @@
-import React from 'react'
-import Button from 'react-bootstrap/Button';
-import { Alert, Navbar, Container, NavDropdown, Nav} from 'react-bootstrap';
+import React, { useRef } from 'react'
 
 const App = () => {
+  const inputRef= useRef(null);
+  const h1Ref= useRef(null);
+  const inputHandler=()=>{
+    console.log(inputRef);
+    inputRef.current.focus();
+    inputRef.current.style.color='red'
+    inputRef.current.placeholder="enter password"
+    inputRef.current.value='123'
+  }
+  const toggleHandler=()=>{
+    
+    if(inputRef.current.style.display!='none') {
+      inputRef.current.style.display='none'
+    } else {
+      inputRef.current.style.display='inline'
+    }
+  }
+  const h1Handler=()=>{
+    h1Ref.current.style.color='green'
+  }
   return (
     <div>
-      <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+      <h1>useRef</h1>
+      <button onClick={toggleHandler}>Toggler</button>
+      <input ref={inputRef} type="text" placeholder='enter username' />
+      <button onClick={inputHandler}>Focus on input</button>
 
-      <Alert variant='success'>Hello, BT installed</Alert>
-      
-      <Button onClick={()=>alert("Bootstrap Button")} variant='danger'>Bootstrap Button</Button>
-      <Button variant='warning'>Ok</Button>
-      <Button variant='info'>Ok</Button>
-      <button onClick={()=>alert("Simple Button")}>Simple Button</button>
+      <h1 ref={h1Ref}>Click on the mode</h1>
+      <button onClick={h1Handler}>Mode</button>
     </div>
   )
 }
