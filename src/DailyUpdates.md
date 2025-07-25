@@ -195,3 +195,12 @@ Uncontrolled Component
 2- Make Uncontrolled component with query selector
 3- Make Uncontrolled component with useRef
 4- Interview question
+
+14th part---
+Pass Function in Component as Props
+
+1-Why we need to pass function as props 
+2- Make Parent and child component 
+3- Call function from parent to child component 
+4- Interview Question 
+5- Passing event!, there is no such things 
