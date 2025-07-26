@@ -204,3 +204,11 @@ Pass Function in Component as Props
 3- Call function from parent to child component 
 4- Interview Question 
 5- Passing event!, there is no such things 
+
+15th Part---
+ForwardRef in React
+
+1- What is ForwardRef in React js
+2- Implement ForwadRef before react 19v
+3- Implement ForwardRef in react 19
+4- Interview Question 
