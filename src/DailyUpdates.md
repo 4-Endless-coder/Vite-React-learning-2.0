@@ -228,3 +228,11 @@ useTransition Hook in React js
     *Make button and apply logic
     *Apply useTransition 
 3- interview Question  
+
+Keep Your Components Pure
+
+1- What is pure function js
+2- What is pure component 
+3- Example of impure component(avoid)
+4- Example of pure component 
+5- Interview Question 
