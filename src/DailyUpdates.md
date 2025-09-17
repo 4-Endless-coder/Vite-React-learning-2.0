@@ -243,3 +243,10 @@ Derived State in React js
 2- Understand derived state with example
 3- How it imporve performance 
 4- interview Question
+
+Lifiting State Up
+
+1- What is Lifiting state up
+2- Make two comoponent 
+3- Share data between two component 
+4- Interview Questions 
