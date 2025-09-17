@@ -1,33 +1,20 @@
-import React, { startTransition, useState, useTransition } from 'react'
+import React from 'react'
 
+// let count =0
 const App = () => {
-  // const [pending, setPending] = useState(false)
-
-  // const handleButton =async ()=>{
-  //   setPending(true)
-  // await new Promise(res=>setTimeout(res, 2000))  
-  //   setPending
-  // }
-const [pending, startTransition] = useTransition();
-
-const handleButton=()=>{
-  startTransition(async ()=>{
-    await new Promise(res=>setTimeout(res, 5000))
-  })
-}
   return (
     <div>
-      <h1>useTransition Hook</h1>
-      {/* <button disabled={pending} onClick={handleButton}>Click</button> */}
-
-      {
-        pending ?
-        <img style={{width:'100px'}}src="https://media.tenor.com/joLYNfFQGDgAAAAi/loading.gif" alt="" />
-        :null
-      }
-      <button disabled={pending} onClick={handleButton}>Click</button>
+      <h1>Kepping Components Pure</h1>
+      <Cup guest={1}/>
+      <Cup guest={2}/>
+      <Cup guest={5}/>
     </div>
   )
+}
+
+const Cup=({guest}) => {
+let count = guest
+  return (<h1>We have {count} guest and we have to make {count} cup of tea</h1>)
 }
 
 export default App
