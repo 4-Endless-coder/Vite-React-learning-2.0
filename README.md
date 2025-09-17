@@ -288,3 +288,11 @@ This repository contains a structured **step-by-step learning plan for React.js*
 3. Update object key 
 4. Update nested object key
 5. Interview Question 
+
+### Updating Array in State
+
+1. Make Array in state 
+2. Display Array Data on Ui 
+3. Update array data
+4. Update object of array
+5. Interview Quesions
