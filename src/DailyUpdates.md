@@ -236,3 +236,10 @@ Keep Your Components Pure
 3- Example of impure component(avoid)
 4- Example of pure component 
 5- Interview Question 
+
+Derived State in React js
+
+1- What is derived state
+2- Understand derived state with example
+3- How it imporve performance 
+4- interview Question
