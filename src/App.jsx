@@ -1,36 +1,51 @@
-import React, { use, useState } from 'react'
+import React, { useState } from 'react'
 
 const App = () => {
-  const [data, setData]= useState({
-    name:'Ashesh',
-    address:{
-      city:'Delhi',
-      country:'India'
-    }
-  })
-  const handleName=(val)=>{
-    data.name=val
-    // let tempData= data;
-    // tempData.name=val
+  const [data, setData]=useState([
+    'ahsesh', 'sam', 'peter','john'
+  ])
+
+  const [dataDetails, setDataDetails]=useState([
+      {name: 'ashesh', age: 25},
+      {name: 'sam', age: 27},
+      {name: 'peter', age: 20},
+
+  ])
+
+  const handleUser=(name)=>{
     
-    setData({...data})
+    data[data.length-1]=name
+    setData([...data])
+    
   }
-  const handleCity=(city)=>{
-    data.address.city=city
+  const handleAge=(age)=>{
     
-    setData({...data,address:{...data.address,city}})
+    dataDetails[dataDetails.length-1].age=age
+    setDataDetails([...dataDetails])
+    
   }
   return (
     <div>
-      <h1>Updating Objects in State</h1>
-      
-      <input type="text" placeholder='update name' 
-      onChange={(event)=>handleName(event.target.value)} />
-      <input type="text" placeholder='update city' 
-      onChange={(event)=>handleCity(event.target.value)} />
-      <h2>Name :{data.name}</h2>
-      <h2>City :{data.address.city}</h2>
-      <h2>Country :{data.address.country}</h2>
+      <h1>Updating Array in State</h1>
+      <input type="text" placeholder='Enter lasr user name'
+      onChange={(e)=>handleUser(e.target.value)}
+      />
+
+      {
+        data.map((item, index)=>(
+          <h2 key={index}>{item}</h2>
+        ))
+      }
+      <hr />
+
+      <input type="text" placeholder='Enter lasr user age'
+      onChange={(e)=>handleAge(e.target.value)}
+      />
+      {
+        dataDetails.map((item, index)=>(
+          <h4 key={index}>{item.name}, {item.age}</h4>
+        ))
+      }
     </div>
   )
 }
