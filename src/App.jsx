@@ -1,20 +1,30 @@
-import React from 'react'
+import React, { use, useState } from 'react'
 
-// let count =0
 const App = () => {
+  const [users, setUsers] =useState([])
+  const [user, setUser] =useState('')
+  const handleAddUsers =()=>{
+    setUsers([...users, user])
+  }
+  // Derived State
+  const total=users.length
+  const last=users[users.length -1]
+  const unique= [...new Set(users)].length
+
   return (
     <div>
-      <h1>Kepping Components Pure</h1>
-      <Cup guest={1}/>
-      <Cup guest={2}/>
-      <Cup guest={5}/>
+      <h2>Total User: {total}</h2>
+      <h2>Last User: {last}</h2>
+      <h2>Unique Total User: {unique}</h2>
+      <input type="text" onChange={(event)=>setUser(event.target.value)} placeholder='add new user' />
+      <button onClick={handleAddUsers}>Add user</button>
+      {
+        users.map((item, index)=>(
+          <h4 key= {index}>{item}</h4>
+        ))
+      }
     </div>
   )
-}
-
-const Cup=({guest}) => {
-let count = guest
-  return (<h1>We have {count} guest and we have to make {count} cup of tea</h1>)
 }
 
 export default App
