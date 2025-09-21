@@ -337,3 +337,13 @@ This repository contains a structured **step-by-step learning plan for React.js*
 1. What are custom Hook
 2. Make custom hook for toggle UI
 3. Interview Question 
+
+
+## 📌 React Router Setup
+
+### Router 7 Setup
+
+1. What is React Router 
+2. install Router 7 in React 18
+3. Test React Router 
+4. Interview Question 
