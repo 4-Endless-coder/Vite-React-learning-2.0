@@ -323,3 +323,11 @@ This repository contains a structured **step-by-step learning plan for React.js*
 1. Rules for hooks
 2. Example 
 3. Interview Question 
+
+### Context API
+
+1. What is Context API 
+2. How to work
+3. Example
+4. Update Data with Context API 
+5. Interview Question 
