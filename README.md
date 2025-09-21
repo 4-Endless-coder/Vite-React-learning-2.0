@@ -331,3 +331,9 @@ This repository contains a structured **step-by-step learning plan for React.js*
 3. Example
 4. Update Data with Context API 
 5. Interview Question 
+
+### Make Custom Hook
+
+1. What are custom Hook
+2. Make custom hook for toggle UI
+3. Interview Question 
