@@ -1,23 +1,27 @@
-import React from 'react'
+import React, { useState } from "react";
+import College from "./College";
+import { SubjectContext } from "./ContextData";
 
 const App = () => {
+  const [subject, setSubject] =useState("");
   return (
     <>
-      <Data />
-      <Data />
-      <Data />
-      <Data />
-      <Data />
-    </>
-  )
-}
+      <div style={{ backgroundColor: "yellow", padding: "10px" }}>
+        <SubjectContext.Provider value={subject}>
+          <select value={subject} onChange={(event)=>setSubject(event.target.value)}>
+           <option value="Select Subject">Select Subject</option>  
+           <option value="Maths">Maths</option>  
+           <option value="History">History</option>  
+           <option value="English">English</option>  
+          </select>
+          <h1>Context API</h1>
+          <button onClick={()=>setSubject('')}>Clear Subject</button>
+          <College />
+        </SubjectContext.Provider>
 
-const Data = () => {
-  return (
-    <>
-    <h1>Fragment In React Js</h1>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
