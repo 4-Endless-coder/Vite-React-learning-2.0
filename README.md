@@ -354,3 +354,14 @@ This repository contains a structured **step-by-step learning plan for React.js*
 2. install Router 7 in React 19
 3. Test React Router 
 4. Interview Question 
+
+
+### Basic Pages with React Router 
+
+1. What is BrowserRouter
+2. What is Routes 
+3. What is Route 
+4. What is Link
+5. Make basic Pages
+6. Make Different file for links 
+7. Interview Question 
