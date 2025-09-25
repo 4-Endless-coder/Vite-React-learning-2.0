@@ -1,5 +1,5 @@
 # React + Vite
----
+--
 # React.js Learning Roadmap
 
 This repository contains a structured **step-by-step learning plan for React.js** concepts, examples, and interview preparation. Each part focuses on an essential React topic with breakdowns, examples, and practice tasks.
