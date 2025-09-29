@@ -365,3 +365,10 @@ This repository contains a structured **step-by-step learning plan for React.js*
 5. Make basic Pages
 6. Make Different file for links 
 7. Interview Question 
+
+### Header with Router
+
+1. Write HTML for header
+2. Add links in header
+3. Write CSS for header 
+4. Interview Question 
