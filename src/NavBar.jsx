@@ -27,6 +27,11 @@ const NavBar = () => {
               About
             </Link>
           </li>
+          <li>
+            <Link className="link" to="/college">
+              College
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
