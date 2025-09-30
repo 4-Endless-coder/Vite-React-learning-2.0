@@ -388,3 +388,10 @@ This repository contains a structured **step-by-step learning plan for React.js*
 3. Make routes for nested navigation 
 4. Interview Question 
 
+### Layout and index Routes
+
+1. What is Layout Routs
+2. Example of Layout Routes
+3. Index Routes
+4. Example of Index Routes 
+5. Interview Question 
