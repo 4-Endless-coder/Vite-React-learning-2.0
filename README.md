@@ -372,3 +372,11 @@ This repository contains a structured **step-by-step learning plan for React.js*
 2. Add links in header
 3. Write CSS for header 
 4. Interview Question 
+
+### 404 Page and Redirection 
+
+1. What is 404 page
+2. Make Route for 404 Page
+3. Make 404 page
+4. Redirect from 404 page
+5. Interview Question 
