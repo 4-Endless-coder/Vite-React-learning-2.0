@@ -380,3 +380,11 @@ This repository contains a structured **step-by-step learning plan for React.js*
 3. Make 404 page
 4. Redirect from 404 page
 5. Interview Question 
+
+### Nested Navigation with Router
+
+1. What is Nested Navigation 
+2. Make some pages for nested navigation
+3. Make routes for nested navigation 
+4. Interview Question 
+
