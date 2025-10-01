@@ -17,8 +17,13 @@ const App = () => {
       <Routes>
         <Route element={<NavBar />}>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/login" element={<Login />} />
+
+          <Route path="in">
+            <Route path="/in/user">
+              <Route path="/in/user/login" element={<Login />} />
+              <Route path="/in/user/about" element={<About />} />
+            </Route>
+          </Route>
         </Route>
 
         <Route path="/college" element={<College />}>
@@ -26,8 +31,8 @@ const App = () => {
           <Route path="department" element={<Department />} />
           <Route path="details" element={<Details />} />
         </Route>
-        {/* <Route path='/*' element={<PageNotFound/>}/> */}
-        <Route path="*" element={<Navigate to="/login" />} />
+        <Route path="/*" element={<PageNotFound />} />
+        {/* <Route path="*" element={<Navigate to="/login" />} /> */}
       </Routes>
     </>
   );
