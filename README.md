@@ -395,3 +395,6 @@ This repository contains a structured **step-by-step learning plan for React.js*
 3. Index Routes
 4. Example of Index Routes 
 5. Interview Question 
+
+
+### Route PREFIX
