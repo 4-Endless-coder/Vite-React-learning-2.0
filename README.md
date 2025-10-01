@@ -398,3 +398,11 @@ This repository contains a structured **step-by-step learning plan for React.js*
 
 
 ### Route PREFIX
+
+### Dynamic Routes
+
+1. What is Dynamic Routes
+2. Make user list page
+3. Make user detail page
+4. Make Dynamic routing
+5. Interview Question 
