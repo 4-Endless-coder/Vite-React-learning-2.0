@@ -1,11 +1,12 @@
 import React from 'react'
-import { NavLink, Outlet } from 'react-router-dom'
+import { NavLink, Outlet, Link } from 'react-router-dom'
 
 const College = () => {
   return (
     <div className='college' style={{textAlign:'center'}}>
       <h1>College Page</h1>
-      <NavLink className='link' to='student'>Student</NavLink>
+      <h3><Link to="/" >Go Back to Home</Link></h3>
+      <NavLink className='link' to=''>Student</NavLink>
       <NavLink className='link' to='department'>Departments</NavLink>
       <NavLink className='link' to='details'>College Details</NavLink>
       <Outlet/>
