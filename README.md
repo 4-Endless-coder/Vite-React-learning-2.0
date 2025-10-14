@@ -412,3 +412,10 @@ This repository contains a structured **step-by-step learning plan for React.js*
 1. What is Optional Segment
 2. Static Optional Segment
 3. Dynamic Optional Segment
+
+### Routrer NavLink and Active Class
+
+1. What is NavLink 
+2. Difference between NavLink and Link
+3. Apply Active Class
+4. Interview Question 
