@@ -9,6 +9,8 @@ import Student from "./Student";
 import Department from "./Department";
 import Details from "./Details";
 import PageNotFound from "./PageNotFound";
+import UserList from "./UserList";
+import UserDetail from "./UserDetail";
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
       <Routes>
         <Route element={<NavBar />}>
           <Route path="/" element={<Home />} />
+          <Route path="/users" element={<UserList/>}/>
+          <Route path="/users/:id" element={<UserDetail />}/>
 
           <Route path="in">
             <Route path="/in/user">

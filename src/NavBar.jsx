@@ -33,6 +33,11 @@ const NavBar = () => {
                 College
               </Link>
             </li>
+            <li>
+              <Link className="link" to="/users">
+                Users
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
