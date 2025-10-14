@@ -406,3 +406,9 @@ This repository contains a structured **step-by-step learning plan for React.js*
 3. Make user detail page
 4. Make Dynamic routing
 5. Interview Question 
+
+### React Router Optional Segment
+
+1. What is Optional Segment
+2. Static Optional Segment
+3. Dynamic Optional Segment
