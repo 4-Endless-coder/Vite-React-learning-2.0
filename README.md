@@ -419,3 +419,9 @@ This repository contains a structured **step-by-step learning plan for React.js*
 2. Difference between NavLink and Link
 3. Apply Active Class
 4. Interview Question 
+
+### API
+
+1. What is API
+2. Why we need it 
+3. Interview Question 
