@@ -425,3 +425,13 @@ This repository contains a structured **step-by-step learning plan for React.js*
 1. What is API
 2. Why we need it 
 3. Interview Question 
+
+### Fetch data from API with Get Method
+
+1. API Methodes 
+2. Test API 
+3. Integrate API 
+4. Display API data
+5. Interview Question 
+
+
