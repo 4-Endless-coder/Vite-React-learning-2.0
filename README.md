@@ -434,4 +434,11 @@ This repository contains a structured **step-by-step learning plan for React.js*
 4. Display API data
 5. Interview Question 
 
+### Install JSON Server and Make API 
 
+1. Install JSON Server
+2. Make db.json file
+3. Run JSON server
+4. Make Users API 
+5. Test API with thunder client
+6. Interview Questions 
