@@ -452,3 +452,11 @@ This repository contains a structured **step-by-step learning plan for React.js*
 5. Display Loader
 6. Interview Question 
  
+### Routes for User list and Add User UI
+
+1. Make BrowserRouter wrapper around the app
+2. Make Routes
+3. Make components 
+4. Make links 
+5. Test link, routes and screens 
+
