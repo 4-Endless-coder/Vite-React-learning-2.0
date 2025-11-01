@@ -460,3 +460,11 @@ This repository contains a structured **step-by-step learning plan for React.js*
 4. Make links 
 5. Test link, routes and screens 
 
+### Integrate Post method API 
+
+1. Make input fileds 
+2. Make State 
+3. Get input field data in State 
+4. Call POST method API
+5. Check data in saved or not 
+6. Interview Question 
