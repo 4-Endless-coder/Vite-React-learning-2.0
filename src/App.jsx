@@ -1,34 +1,40 @@
 import React, { useEffect, useState } from 'react'
 
 const App = () => {
-  const [usersData, setUsersData] = useState([]);
+  const [userData, setUserData]= useState([])
+  const [loading, setLoading]= useState(false)
   useEffect(()=>{
-    getUsersData();
+    setLoading(true);
+    getUserData();
   }, [])
-  const getUsersData= async()=> {
-    const url = "https://dummyjson.com/users";
-    let response = await fetch(url)
-    response = await response.json()
-    setUsersData(response.users)
+
+  const getUserData =async()=> {
+    const url = "http://localhost:3000/users"
+    let response = await fetch(url);
+    response =await response.json();
+    console.log(response);
+    setUserData(response)
+    setLoading(false);
   }
-  console.log(usersData);
-  
   return (
     <>
-      <h1>Ftech data from API</h1>
-      <ul className='user-list user-list-header'>
-            <li>First Name</li>
-            <li>Last Name</li>
+      <h1>Integrate JSON Server API and Loader</h1>
+        <ul className='user-list user-list-header'>
+            <li>Name</li>
             <li>Age</li>
+            <li>Email</li>
           </ul>
+      
       {
-        usersData && usersData.map((user)=>(
-          <ul className='user-list'>
-            <li>{user.firstName}</li>
-            <li>{user.lastName}</li>
+        !loading?
+        userData.map((user)=>(
+          <ul key={user.name} className='user-list'>
+            <li>{user.name}</li>
             <li>{user.age}</li>
+            <li>{user.email}</li>
           </ul>
         ))
+        :<h2>Data Loading...</h2>
       }
     </>
   )
