@@ -442,3 +442,13 @@ This repository contains a structured **step-by-step learning plan for React.js*
 4. Make Users API 
 5. Test API with thunder client
 6. Interview Questions 
+
+### Integrate JSON Server API and Loader
+
+1. Make function for API call
+2. Display data fon UI from API
+3 .Common error fix
+4. Make Loading State
+5. Display Loader
+6. Interview Question 
+ 
