@@ -469,3 +469,11 @@ Here are the topics implemented in this project, organized by category.
 3. Define State for api data
 4. Populate data in input fields
 5. Interview Question 
+
+### Update Data with PUT API method
+
+1. Update state value
+2. Make function for call put method api
+3. Write code for call api 
+4. Redirect after Update data 
+5. Interview Question 
