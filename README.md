@@ -453,3 +453,11 @@ Here are the topics implemented in this project, organized by category.
 3. Remove delete row from UI 
 4. Interview Question 
 
+### Edit User Detail Page
+
+1. Add Edit Button 
+2. Define Edit Page Route
+3. Make Edit Page
+4. Navigation to Edit Page
+5. Define input fields
+6. Interview Question 
