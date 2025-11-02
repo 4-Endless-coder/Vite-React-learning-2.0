@@ -477,3 +477,11 @@ Here are the topics implemented in this project, organized by category.
 3. Write code for call api 
 4. Redirect after Update data 
 5. Interview Question 
+
+### Simple Validation in React js
+
+1. Make input field and define state to store Data
+2. Apply alidation 
+3. Display Error Message
+4. Apply Validation on other input field
+5. Interview Question 
