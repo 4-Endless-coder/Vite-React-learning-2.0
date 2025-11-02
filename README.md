@@ -461,3 +461,11 @@ Here are the topics implemented in this project, organized by category.
 4. Navigation to Edit Page
 5. Define input fields
 6. Interview Question 
+
+### Populate Data in input fields with API
+
+1. Get id from URL 
+2. Call API for single user data
+3. Define State for api data
+4. Populate data in input fields
+5. Interview Question 
