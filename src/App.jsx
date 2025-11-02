@@ -1,41 +1,43 @@
-import React, { useState } from 'react'
+import React, { useActionState } from 'react'
 
 const App = () => {
-  const [name, setName]= useState("");
-  const [nameErr, setNameErr]= useState();
-  const [password, setPassword]= useState("");
-  const [passErr, setPassErr]= useState();
+  const handleLogin =(prevData, formData)=>{
+    let name = formData.get('name')
+    let password = formData.get('password')
+    let regex =/^[A-Z0-9]+$/i;
 
-  const handleName=(e)=>{
-    console.log(e.target.value);
-    if(e.target.value.length > 5){
-      setNameErr("Please Enter Name less than 5 characters");
+    if(!name || name.length > 5){
+      return{error:'Name should be 5 charchters', name, password}
+    }else if(!regex.test(password)){
+      return{error:'Password can container only alpha or numeric', name, password}
     }else{
-      setNameErr();
+      return{message:'Login Success', name, password}
     }
-  }
 
-    const handlePassword=(e)=>{
-    let regex= /^[A-Z0-9]+$/i;
-    if(regex.test(e.target.value)){
-      setPassErr();
-      
-    }else{
-      setPassErr("Password must be alphanumeric");
-    }
+    // console.log(name, password);
+    
   }
-
+  const [data, action,pending]= useActionState(handleLogin);
+  
+  
   return (
     <>
-      <input className={nameErr?'error':''} type="text" onChange={handleName} placeholder='Enter Name' />
-      <span className='red-color'>{nameErr && nameErr}</span>
-      <br /><br />
-      <input className={passErr?'error':''} type="text" onChange={handlePassword} placeholder='Enter Password' />
-      <span className='red-color'>{passErr && passErr}</span>
-      <br /><br />
-      <button disabled={passErr || nameErr}>Login</button>
+      <h1>Validation with useActionState</h1>
+      {
+        data?.message && <span style={{color:'green'}}>{data?.message}</span>
+      }
+      {
+        data?.error && <span style={{color:'red'}}>{data?.error}</span>
+      }
+      <form action={action}>
+        <input defaultValue={data?.name} type="text" name='name' placeholder='enter user name' />
+        <br /><br />
+        <input defaultValue={data?.password} type="text" name='password' placeholder='enter user password' />
+        <br /><br />
+        <button>Login</button>
+      </form>
     </>
   )
- }
+}
 
-export default App;
+export default App
