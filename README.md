@@ -445,3 +445,11 @@ Here are the topics implemented in this project, organized by category.
 4. Call POST method API
 5. Check data in saved or not
 6. Interview Question
+
+### Integrate API for Delete Method
+
+1. Add Delete button
+2. Call API for Delete
+3. Remove delete row from UI 
+4. Interview Question 
+
