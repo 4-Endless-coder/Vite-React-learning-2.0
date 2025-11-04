@@ -501,3 +501,11 @@ Here are the topics implemented in this project, organized by category.
 3. Define default value for input field 
 4. Define useReducer Hook
 5. Interview Question 
+
+### Lazy Loading in React js
+
+1. What is Lazy Loading 
+2. How to use lazy loading
+3. Suspense use with lazy loading
+4. Check Performance 
+5. Interview Question 
