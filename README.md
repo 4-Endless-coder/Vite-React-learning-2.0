@@ -509,3 +509,11 @@ Here are the topics implemented in this project, organized by category.
 3. Suspense use with lazy loading
 4. Check Performance 
 5. Interview Question 
+
+### 'use' API in React 19
+
+1. What is use API 
+2. How use use API work
+3. Example with actual Rest API 
+4. Interview Question 
+
