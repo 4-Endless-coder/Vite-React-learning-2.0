@@ -525,3 +525,10 @@ Here are the topics implemented in this project, organized by category.
 . `use API` can use to handle contect API also 
 . `use API` reduce rendering of component as compare to useEffect 
 . Interview Questions 
+
+### use optimistic hook in React 19
+
+1. What is use of optimistic hook
+2. Example
+3. Interview Question 
+4. Code on Githib
