@@ -510,10 +510,18 @@ Here are the topics implemented in this project, organized by category.
 4. Check Performance 
 5. Interview Question 
 
-### 'use' API in React 19
+### 'use' API in React 
 
 1. What is use API 
 2. How use use API work
 3. Example with actual Rest API 
 4. Interview Question 
 
+### 'use API in React 19'
+
+. Stable Feature in React 19 
+. use can handle promise and return data from promise 
+. We should use `use API` with Suspense 
+. `use API` can use to handle contect API also 
+. `use API` reduce rendering of component as compare to useEffect 
+. Interview Questions 
