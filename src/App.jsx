@@ -1,55 +1,36 @@
-import { useOptimistic, useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
+import { Activity } from "react";
 
+const App = () => {
+  const [showHome, setShowHome] = useState(true);
+  return (
+    <>
+      <h1>Activity in React 19.2</h1>
+      <button onClick={() => setShowHome(true)}>Home</button>
+      <button onClick={() => setShowHome(false)}>User Form</button>
+      <Activity mode={showHome == true ? 'visible' : 'hidden'}>
+        <Home />
+      </Activity>
+      <Activity mode={showHome == false ? 'visible' : 'hidden'}>
+        <UserForm />
+      </Activity>
+    </>
+  );
+};
 
-export default function App() {
-
-  const [skills, setSkills] = useState([]);
-  const [name, setName] = useState([]);
-  const [optSkills,setOptSkills]=useOptimistic(skills)
-  useEffect(() => {
-    getSkills()
-  }, []);
-
-  const getSkills = async () => {
-    let resp = await fetch('http://localhost:3000/skills');
-    resp = await resp.json();
-    setSkills(resp)
-  }
-
-  function sleep(ms){
-    return new Promise(resolve=>setTimeout(resolve,ms))
-  }
-  const addSkill = async (event) => {
-
-   
-    const id = Math.random() * 100000;
-    setOptSkills((prev)=>[...prev,{name,id}])
-    let resp = await fetch('http://localhost:3000/skills', {
-      method: "post",
-      body: JSON.stringify({ name, id })
-    });
-    await sleep(3000)
-    resp = await resp.json();
-    
-    console.log("apple", resp);
-
-    if (resp) {
-      getSkills()
-    }
-  }
-
-
+const Home = () => {
+  return <h1>Home Page</h1>;
+};
+const UserForm = () => {
   return (
     <div>
-<form action={addSkill}>
-      <input type="text" onChange={(e) => setName(e.target.value)} placeholder="enter skill" />
-      <button  >Add </button>
-      </form>
-      {
-        optSkills.map((item) => (
-          <div key={item.id} >{item.name}</div>
-        ))
-      }
+      <h1>User Form</h1>
+      <input type="text" placeholder="enter name" />
+      <input type="text" placeholder="enter name" />
+      <input type="text" placeholder="enter name" />
+      <input type="text" placeholder="enter name" />
     </div>
-  )
-}
+  );
+};
+
+export default App;

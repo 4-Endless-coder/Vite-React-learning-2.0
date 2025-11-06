@@ -540,3 +540,6 @@ Here are the topics implemented in this project, organized by category.
 2. What Problem it resolve 
 3. Example of activity 
 4. Interview Questions 
+
+### Ans 
+. The <Activity> is a wrapper component that lets you hide parts of your UI but preserve their state and DOM
