@@ -532,3 +532,11 @@ Here are the topics implemented in this project, organized by category.
 2. Example
 3. Interview Question 
 4. Code on Githib
+
+
+### Activity in React 19.2.0
+
+1. What is Activity in React 
+2. What Problem it resolve 
+3. Example of activity 
+4. Interview Questions 
