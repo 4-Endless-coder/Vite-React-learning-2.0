@@ -595,3 +595,11 @@ Here are the topics implemented in this project, organized by category.
 4. Call action from comopnent
 5.Interview Question
 6. Notes 
+
+### Call Product API
+
+1. Make New Slice
+2. API call inside reduc toolkit
+3. Add Reducer to Store
+4. Call API action from UI
+5. Interview Question 
