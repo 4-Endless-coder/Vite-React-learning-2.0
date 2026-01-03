@@ -558,3 +558,10 @@ Here are the topics implemented in this project, organized by category.
 
 . that always use the lateest state or props, without 
 . re-running the entire effect every time something chnages.
+
+###  Redux & RTK Architecture 
+
+1. Redux Main Componenet 
+2. Redux and RTK flow
+3. How Redux Works
+4. Interview Questions 
