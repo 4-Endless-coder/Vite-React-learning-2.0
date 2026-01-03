@@ -616,3 +616,10 @@ Here are the topics implemented in this project, organized by category.
 2. Update selector for add to cart
 3. Show added to cart button
 4. Interview Question
+
+### Persist and Remove Cart
+
+1. Use localStorage for persist data
+2. Make remove cart item button
+3. Update Remove cart action in slice
+4. Interview Question 
