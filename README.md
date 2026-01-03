@@ -573,7 +573,7 @@ Here are the topics implemented in this project, organized by category.
 ### App and RTK Setup
 
 1. Make React js App
-2. Intsall Redux and Redu Toolkit
+2. Intsall Redux and Redux Toolkit
 3. Make Redux-toolkit file
 4. Interview Questions 
 5. Notes
