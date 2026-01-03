@@ -543,3 +543,11 @@ Here are the topics implemented in this project, organized by category.
 
 ### Ans 
 . The <Activity> is a wrapper component that lets you hide parts of your UI but preserve their state and DOM
+
+### useEffect Event in React 19.2
+
+1. what is the useEffectEvent
+2. Problem statement (Why we need useEffectEvent)
+3. Solution with useEffectEvent
+4. Interview Question 
+5. Notes and code
