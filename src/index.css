@@ -218,6 +218,7 @@ body {
   
   .grid {
     grid-template-columns: 1fr; /* Single column on small mobile */
+    margin-top: 50px;
   }
 }
 
