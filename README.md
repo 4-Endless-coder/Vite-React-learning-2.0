@@ -577,3 +577,12 @@ Here are the topics implemented in this project, organized by category.
 3. Make Redux-toolkit file
 4. Interview Questions 
 5. Notes
+
+### Make RTK flow
+
+1. Make Componenets 
+2. Make Slice 
+3. Add reducer in store
+4. Call Action from component 
+5. Interview Question 
+6. Notes
