@@ -562,6 +562,18 @@ Here are the topics implemented in this project, organized by category.
 ###  Redux & RTK Architecture 
 
 1. Redux Main Componenet 
-2. Redux and RTK flow
+2. Redux and RTK flow 
 3. How Redux Works
 4. Interview Questions 
+
+### Redux main components
+
+1. Action, Reducer, Store, Dispatcher, Selected
+
+### App and RTK Setup
+
+1. Make React js App
+2. Intsall Redux and Redu Toolkit
+3. Make Redux-toolkit file
+4. Interview Questions 
+5. Notes
