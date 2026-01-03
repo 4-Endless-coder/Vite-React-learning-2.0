@@ -586,3 +586,12 @@ Here are the topics implemented in this project, organized by category.
 4. Call Action from component 
 5. Interview Question 
 6. Notes
+
+### Remove Data from Store
+
+1. Make Remove to cart button 
+2. Make remove item action slice
+3. Make button remove all item in App
+4. Call action from comopnent
+5.Interview Question
+6. Notes 
