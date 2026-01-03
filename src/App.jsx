@@ -10,8 +10,8 @@ const App = () => {
   return (
     <div>
       <Header />
-      <h1>React Redux Toolkit</h1>
-      <button onClick={()=>dispatch(clearAllItem())} className="clear-cart-btn">Clear Cart</button>
+      {/* <h1>React Redux Toolkit</h1>
+      <button onClick={()=>dispatch(clearAllItem())} className="clear-cart-btn">Clear Cart</button> */}
       <Product />
     </div>
   )

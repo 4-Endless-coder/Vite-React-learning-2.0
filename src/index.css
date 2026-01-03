@@ -143,6 +143,9 @@ body {
   font-weight: 800;
   font-size: 1.2rem;
 }
+.price{
+  color: rgb(110, 189, 31);
+}
 
 .rating {
   font-size: 0.95rem;
@@ -165,6 +168,21 @@ body {
   cursor: pointer;
   transition: background-color 0.2s, transform 0.1s;
 }
+.clear-cart-btn {
+  margin: 20px;
+  background-color: #c0392b; /* Red color for clear cart */
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.clear-cart-btn:hover {
+  background-color: #e74c3c;
+}
 
 .add-to-cart:hover {
   background-color: #34495e;
@@ -172,6 +190,13 @@ body {
 
 .add-to-cart:active {
   transform: scale(0.97);
+}
+.btn-disable {
+  background-color: gainsboro;
+}
+
+.btn-disable:hover{
+  background-color: gainsboro;
 }
 
 /* 7. Loading State Style */

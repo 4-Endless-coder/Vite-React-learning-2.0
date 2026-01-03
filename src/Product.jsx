@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import AddToCart from "./AddToCart";
-import { addItem, removeItem } from "./redux/slice";
+import { addItem } from "./redux/slice";
 import { fetchProducts } from "./redux/productSlice";
 
 const Product = () => {
@@ -11,6 +11,9 @@ const Product = () => {
   }, []);
   const productSelector = useSelector((state) => state.products.items);
   console.log(productSelector);
+
+  const cartSelector = useSelector((state)=>state.cart.items);
+    console.log(cartSelector.length);
 
   return (
     <div>
@@ -24,7 +27,13 @@ const Product = () => {
                 <div className="brnad">{item.brnad}</div>
                 <div className="price">{item.price}</div>
                 <div className="rating">{item.rating}</div>
-                <button className="add-to-cart">Add to Cart</button>
+                {
+                  cartSelector.find(cartItem => cartItem.id === item.id) ?
+                <button  className="add-to-cart btn-disable">Added to Cart</button>
+                :
+                <button onClick={()=>dispatch(addItem(item))} className="add-to-cart">Add to Cart</button>
+                
+                }
               </div>
             </div>
           ))}
