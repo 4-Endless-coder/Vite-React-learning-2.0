@@ -623,3 +623,10 @@ Here are the topics implemented in this project, organized by category.
 2. Make remove cart item button
 3. Update Remove cart action in slice
 4. Interview Question 
+
+### Add Routing and Cart Page
+
+1. Install Routing package
+2. Make Page for cart items
+3. App Routing Links
+4. Interview Question 
