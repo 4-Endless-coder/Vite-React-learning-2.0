@@ -1,34 +1,23 @@
-import React, { useState } from "react";
-import { Activity } from "react";
+import React, { useEffect, useEffectEvent, useState } from "react";
 
 const App = () => {
-  const [showHome, setShowHome] = useState(true);
-  return (
-    <>
-      <h1>Activity in React 19.2</h1>
-      <button onClick={() => setShowHome(true)}>Home</button>
-      <button onClick={() => setShowHome(false)}>User Form</button>
-      <Activity mode={showHome == true ? 'visible' : 'hidden'}>
-        <Home />
-      </Activity>
-      <Activity mode={showHome == false ? 'visible' : 'hidden'}>
-        <UserForm />
-      </Activity>
-    </>
-  );
-};
+  const [count, setCount] = useState(0);
 
-const Home = () => {
-  return <h1>Home Page</h1>;
-};
-const UserForm = () => {
+
+  const countControl = useEffectEvent(()=>{
+    setCount(count + 1);
+  })
+  useEffect(() => {
+    const internal = setInterval(() => {
+      countControl()
+    }, 1000);
+    console.log(internal);
+    
+    return ()=>clearInterval(internal)
+  }, []);
   return (
     <div>
-      <h1>User Form</h1>
-      <input type="text" placeholder="enter name" />
-      <input type="text" placeholder="enter name" />
-      <input type="text" placeholder="enter name" />
-      <input type="text" placeholder="enter name" />
+      <h1>{count}</h1>
     </div>
   );
 };

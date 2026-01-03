@@ -551,3 +551,10 @@ Here are the topics implemented in this project, organized by category.
 3. Solution with useEffectEvent
 4. Interview Question 
 5. Notes and code
+
+### Ans
+
+. useEffectEvent is React Hook that lets you write functions inside useEffect
+
+. that always use the lateest state or props, without 
+. re-running the entire effect every time something chnages.
