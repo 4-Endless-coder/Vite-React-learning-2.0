@@ -29,11 +29,11 @@ const Product = () => {
             <div className="product-actions">
               <label>
                 Qty:
-                <input type="number" value="1" min="1" />
+                <input type="number" defaultValue="1" min="1" />
               </label>
 
               <button
-                onClick={() =>dispatch(addItem(1))}
+                onClick={() =>dispatch(addItem())}
                 className="add-to-cart"
               >
                 Add to Cart
