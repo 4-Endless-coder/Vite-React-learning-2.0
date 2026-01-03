@@ -192,12 +192,14 @@ body {
   transform: scale(0.97);
 }
 .btn-disable {
-  background-color: gainsboro;
+  background-color: #c0392b
+  
 }
 
-.btn-disable:hover{
-  background-color: gainsboro;
+.btn-disable:hover {
+  background-color: #e74c3c;
 }
+
 
 /* 7. Loading State Style */
 .loader {
