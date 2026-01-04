@@ -1,4 +1,18 @@
-/* Reset */
+/* 1. Design System & Global Variables */
+:root {
+  --bg-main: #ffffff;
+  --bg-products: #f8fafc; /* Subtle grey-blue background for product section */
+  --nav-gradient: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --accent-rating: #f59e0b; /* Professional Amber */
+  --accent-price: #10b981;  /* Emerald Green */
+  --cart-total-color: #6366f1; /* Unique Indigo for Cart Total */
+  --border-subtle: #e2e8f0;
+  --radius: 6px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,367 +20,192 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', -apple-system, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.5;
 }
 
-/* Header */
+/* 2. Enhanced Navigation with Gradient */
 .site-header {
+  background: var(--nav-gradient);
+  padding: 1rem 2.5rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 14px 24px;
-  background: #111;
-  color: #fff;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo */
 .logo {
-  font-size: 1.4rem;
-  font-weight: bold;
-}
-
-/* Navigation */
-.nav {
-  display: flex;
-  gap: 20px;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
 }
 
 .nav a {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  margin-left: 2rem;
+  transition: var(--transition);
 }
 
 .nav a:hover {
-  opacity: 0.8;
+  color: #ffffff;
 }
 
-/* Cart */
-.cart {
-  position: relative;
-  cursor: pointer;
-}
-
-.cart-icon {
-  font-size: 1.6rem;
-}
-
-/* Cart count badge */
-.cart-count {
-  position: absolute;
-  top: -6px;
-  right: -10px;
-  background: #ff3b3b;
-  color: #fff;
-  font-size: 0.75rem;
-  padding: 2px 6px;
-  border-radius: 50%;
-  font-weight: bold;
-}
-
-/* Container styling */
+/* 3. Animated Product Page & Grid */
 .product-page {
-  padding: 40px 5%;
-  background-color: #f4f7f6; /* Subtle background for contrast */
-  min-height: 100vh;
+  background-color: var(--bg-products);
+  padding: 4rem 2rem;
+  min-height: calc(100vh - 70px);
 }
 
-/* 1. Fix: Column-wise Grid with Responsiveness */
 .grid {
   display: grid;
-  /* Automatically creates columns: minimum 280px, fills space otherwise */
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 30px;
-  max-width: 1400px;
+  gap: 2rem;
+  max-width: 1200px;
   margin: 0 auto;
+  animation: fadeInSlideUp 0.6s ease-out forwards;
 }
 
-/* 2. Fix: Card Styling */
 .card {
   background: #ffffff;
-  border-radius: 12px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  border: 1px solid #eee;
+  border-radius: var(--radius);
+  padding: 1rem;
+  border: 1px solid var(--border-subtle);
+  transition: var(--transition);
 }
 
 .card:hover {
-  transform: translateY(-8px); /* Lift effect */
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
 }
 
-/* 3. Fix: Image Handling */
 .card img {
   width: 100%;
-  height: 220px;
-  object-fit: cover; /* Ensures images don't look stretched */
-  border-bottom: 1px solid #f0f0f0;
-  transition: opacity 0.3s;
-}
-
-.card:hover img {
-  opacity: 0.9;
-}
-
-/* 4. Fix: Content Section */
-.content {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1; /* Makes cards equal height */
-}
-
-.title {
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: #2c3e50;
-  margin-bottom: 5px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis; /* Shortens long titles */
-}
-
-.brnad { /* Matches the typo 'brnad' in your JSX */
-  font-size: 0.85rem;
-  color: #7f8c8d;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 12px;
-}
-
-/* 5. Fix: Color Style for Price and Rating */
-.price, .rating {
-  color: #e67e22; /* Professional orange/gold color for both */
-  font-weight: 800;
-  font-size: 1.2rem;
-}
-.price{
-  color: rgb(110, 189, 31);
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 2px);
+  margin-bottom: 1rem;
 }
 
 .rating {
-  font-size: 0.95rem;
-  margin-bottom: 15px;
-}
-
-.rating::after {
-  content: " ★";
-}
-
-/* 6. Fix: Button Styling */
-.add-to-cart {
-  margin-top: auto; /* Pushes button to bottom of card */
-  background-color: #2c3e50; /* Deep blue/black professional look */
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 6px;
+  color: var(--accent-rating);
   font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s, transform 0.1s;
-}
-.clear-cart-btn {
-  margin: 20px;
-  background-color: #c0392b; /* Red color for clear cart */
-  color: white;
-  border: none;
-  padding: 10px 16px;
-  border-radius: 6px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s, transform 0.1s;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
 }
 
-.clear-cart-btn:hover {
-  background-color: #e74c3c;
+.price {
+  color: var(--accent-price);
+  font-weight: 700;
+  font-size: 1.1rem;
 }
 
-.add-to-cart:hover {
-  background-color: #34495e;
-}
-
-.add-to-cart:active {
-  transform: scale(0.97);
-}
-.btn-disable {
-  background-color: #c0392b
-  
-}
-
-.btn-disable:hover {
-  background-color: #e74c3c;
-}
-
-
-/* 7. Loading State Style */
-.loader {
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 100px 0;
-  color: #2c3e50;
-  font-weight: bold;
-}
-
-/* Mobile Adjustments */
-@media (max-width: 480px) {
-  .product-page {
-    padding: 20px;
-  }
-  
-  .grid {
-    grid-template-columns: 1fr; /* Single column on small mobile */
-    margin-top: 50px;
-  }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .product-container {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Enhanced Cart Item Listing Styles in index.css */
-
+/* 4. Animated Cart Listing */
 .cart-container {
-  max-width: 900px;
-  margin: 60px auto;
-  background-color: #ffffff;
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  border: 1px solid #eee;
-  margin-bottom: 100px;
-}
-
-.cart-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 30px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.cart-header h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #111;
-  margin: 0;
-}
-
-.cart-header span {
-  color: #666;
-  font-size: 0.9rem;
-  text-transform: lowercase;
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2rem;
+  animation: slideInLeft 0.5s ease-out;
 }
 
 .cart-item {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  gap: 20px;
-  padding: 24px 0;
-  border-bottom: 1px solid #f9f9f9;
-}
-
-.cart-item:last-of-type {
-  border-bottom: none;
-}
-
-.item-info {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 20px;
-}
-
-.item-info img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 4px;
-  background-color: #f6f6f6;
-}
-
-.item-details h4 {
-  margin: 0 0 4px 0;
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #111;
-}
-
-.item-details p {
-  margin: 0;
-  font-size: 0.85rem;
-  color: #666;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.item-actions {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 12px;
-}
-
-.item-actions .price {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #111;
-  display: block;
-}
-
-/* Reusing your existing button style but refining it */
-.cart-item .add-to-cart {
-  padding: 8px 16px;
-  font-size: 0.85rem;
-  background-color: #111;
-  border-radius: 4px;
-  transition: opacity 0.2s ease;
-}
-
-.cart-item .btn-disable {
-  background-color: #fff;
-  color: #d40e0e;
-  border: 1px solid #f0f0f0;
-}
-
-.cart-item .btn-disable:hover {
-  background-color: #fff1f1;
-  border-color: #ffcccc;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+  animation: fadeIn 0.4s ease-in forwards;
 }
 
 .cart-footer {
-  margin-top: 40px;
-  padding-top: 25px;
-  border-top: 2px solid #111;
+  margin-top: 2rem;
   text-align: right;
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #111;
+  padding-top: 1.5rem;
+  border-top: 2px solid var(--text-main);
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 600px) {
-  .cart-container {
-    margin: 20px;
-    padding: 20px;
-  }
+.cart-footer .total-price {
+  color: var(--cart-total-color); /* Unique color for cart total */
+  font-size: 1.5rem;
+  font-weight: 800;
+}
 
-  .cart-item {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
+/* 5. Modern Success Message / Alert (Center Pop-up) */
+/* Apply this class to your alert container in JSX */
+.success-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
 
-  .item-actions {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid #f9f9f9;
-    padding-top: 15px;
-  }
+.success-modal {
+  background: #ffffff;
+  padding: 3rem;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  animation: scaleUp 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.success-modal h2 {
+  color: var(--accent-price);
+  margin-bottom: 1rem;
+}
+
+/* 6. Animations Definitions */
+@keyframes fadeInSlideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* 7. Global Button UI */
+.add-to-cart, .place-order-btn {
+  background: var(--text-main);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.add-to-cart:hover, .place-order-btn:hover {
+  background: #334155;
+  transform: scale(1.02);
+}
+
+.btn-disable {
+  background: transparent;
+  color: var(--accent-error);
+  border: 1px solid var(--border-subtle);
 }

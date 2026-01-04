@@ -87,7 +87,7 @@ const CartList = () => {
             )
             .toFixed(2)}
         </div>
-        <button onClick={handlePlaceOrder} className="order-btn">Place Order</button>
+        <button onClick={handlePlaceOrder} className="place-order-btn">Place Order</button>
       </div>
     </>
   );
