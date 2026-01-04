@@ -20,11 +20,11 @@ const addToCart = createSlice({
       state.items=cartData
       localStorage.setItem('cart',JSON.stringify(cartData))
     },
-    clearAllItem: (state) => {
-      state.value = 0;
+    clearAllItems: (state) => {
+      state.items = [];
     },
   },
 });
 
-export const { addItem, removeItem, clearAllItem } = addToCart.actions;
+export const { addItem, removeItem, clearAllItems } = addToCart.actions;
 export default addToCart.reducer;
