@@ -31,7 +31,7 @@ const Product = () => {
                   cartSelector.find(cartItem => cartItem.id === item.id) ?
                 <button onClick={()=>dispatch(removeItem(item))} className="add-to-cart btn-disable">Removed From Cart</button>
                 :
-                <button onClick={()=>dispatch(addItem(item))} className="add-to-cart">Add to Cart</button>
+                <button onClick={()=>dispatch(addItem(item))} className="add-to-cart ">Add to Cart</button>
                 
                 }
               </div>
