@@ -637,3 +637,10 @@ Here are the topics implemented in this project, organized by category.
 2. Show total items and Price
 3. Add style
 4. Interview Question 
+
+### Order and clear Redux Value
+
+1. Make Function for place holder
+2. Remove data from redux
+3. Remove data from localstorage
+4. Interview Question
