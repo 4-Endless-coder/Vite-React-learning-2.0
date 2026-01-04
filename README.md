@@ -630,3 +630,10 @@ Here are the topics implemented in this project, organized by category.
 2. Make Page for cart items
 3. App Routing Links
 4. Interview Question 
+
+### Cart Item Listing
+
+1. Display Cart Items
+2. Show total items and Price
+3. Add style
+4. Interview Question 
