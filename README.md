@@ -638,6 +638,13 @@ Here are the topics implemented in this project, organized by category.
 3. Add style
 4. Interview Question 
 
+### Add Quantity with Cart items
+
+1. Add input field for quantity
+2. Adjust price as per quantity
+3.Update total price as per quanity 
+4.Interview Question
+
 ### Order and clear Redux Value
 
 1. Make Function for place holder

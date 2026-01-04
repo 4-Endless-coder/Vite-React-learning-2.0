@@ -1,18 +1,31 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { removeItem } from "./redux/slice";
+import { useState } from "react";
 
 const CartList = () => {
   const cartSelecor = useSelector((state) => state.cart.items);
   console.log(cartSelecor);
+  const dispatch = useDispatch();
+
+  const [cartItems, setCartItems] = useState(cartSelecor);
+
+  const manageQuantity = (id, q) => {
+    let quantity = parseInt(q) > 1 ? parseInt(q) : 1;
+    const cartTempItems = cartSelecor.map((item) => {
+      return item.id == id ? { ...item, quantity } : item;
+    });
+    setCartItems(cartTempItems);
+  };
 
   return (
     <>
       <div className="cart-container">
         <div className="cart-header">
           <h2>Your Cart Items</h2>
-          <span>{cartSelecor.length}items</span>
+          <span>{cartItems.length}items</span>
         </div>
-        {cartSelecor.length > 0
-          ? cartSelecor.map((item) => (
+        {cartItems.length > 0
+          ? cartItems.map((item) => (
               <div key={item.id} className="cart-item">
                 <div className="item-info">
                   <img src={item.thumbnail} alt="" />
@@ -22,16 +35,46 @@ const CartList = () => {
                   </div>
                 </div>
                 <div className="item-actions">
-                  <span className="price">{item.price}</span>
-                  <button className="add-to-cart btn-disable">Remove</button>
+                  <div style={{ display: "flex" }}>
+                    <input
+                      onChange={(e) => manageQuantity(item.id, e.target.value)}
+                      value={item.quantity ? item.quantity : 1}
+                      style={{ margin: "15px" }}
+                      type="number"
+                      placeholder="enter quantity"
+                    />
+                    <div>
+                      <span className="price">
+                        $
+                        {(item.quantity
+                          ? item.price * item.quantity
+                          : item.price
+                        ).toFixed(2)}
+                      </span>
+                      <button
+                        onClick={() => dispatch(removeItem(item))}
+                        className="add-to-cart btn-disable"
+                      >
+                        Remove
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             ))
-          : null
-          }
-          <div className="cart-footer">
-            Total : {cartSelecor.reduce((sum,item)=>sum+item.price,0)}
-          </div>
+          : null}
+        <div className="cart-footer">
+          Total : ${" "}
+          {cartItems
+            .reduce(
+              (sum, item) =>
+                item.quantity
+                  ? sum + item.price * item.quantity
+                  : sum + item.price,
+              0
+            )
+            .toFixed(2)}
+        </div>
       </div>
     </>
   );
